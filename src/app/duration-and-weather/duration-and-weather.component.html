@@ -5,7 +5,7 @@
       <form class="duration-form">
         <mat-form-field class="example-full-width">
           <mat-label>Duration</mat-label>
-          <input matInput type="time" placeholder="">
+          <input matInput type="time" placeholder="" spellcheck="false">
           <mat-hint align="start"><strong>HH:MM</strong> </mat-hint>
         </mat-form-field>
       </form>
@@ -20,7 +20,8 @@
                  aria-label="weather"
                  matInput
                  [formControl]="filteredWeathers"
-                 [matAutocomplete]="autoWeather">
+                 [matAutocomplete]="autoWeather"
+                 spellcheck="false">
           <mat-autocomplete #autoWeather="matAutocomplete">
             <mat-option *ngFor="let weather of filteredWeathers | async" [value]="weather">
               {{weather}}

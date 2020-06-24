@@ -5,7 +5,7 @@
       <form class="player-form">
         <mat-form-field class="player-full-width">
           <mat-label>Player</mat-label>
-          <input matInput #player>
+          <input matInput #player spellcheck="false">
           <mat-hint align="start"><strong>Name Surname</strong> </mat-hint>
         </mat-form-field>
       </form>
@@ -20,7 +20,8 @@
                  aria-label="Location"
                  matInput
                  [formControl]="controlLocations"
-                 [matAutocomplete]="autoLocation">
+                 [matAutocomplete]="autoLocation"
+                 spellcheck="false">
           <mat-autocomplete #autoLocation="matAutocomplete">
             <mat-option *ngFor="let location of filteredLocations | async" [value]="location">
               {{location}}

@@ -17,6 +17,8 @@ import { SportAndTeamTypeComponent } from './sport-and-team-type/sport-and-team-
 import { VersusComponent } from './versus/versus.component';
 import { PlayerAndLocationComponent } from './player-and-location/player-and-location.component';
 import { DurationAndWeatherComponent } from './duration-and-weather/duration-and-weather.component';
+import { AudienceAndInjuryComponent } from './audience-and-injury/audience-and-injury.component';
+import { ResultComponent } from './result/result.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { DurationAndWeatherComponent } from './duration-and-weather/duration-and
     SportAndTeamTypeComponent,
     VersusComponent,
     PlayerAndLocationComponent,
-    DurationAndWeatherComponent
+    DurationAndWeatherComponent,
+    AudienceAndInjuryComponent,
+    ResultComponent
   ],
   imports: [
     BrowserModule,

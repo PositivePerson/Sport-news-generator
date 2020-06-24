@@ -9,7 +9,8 @@
                  aria-label="Sport"
                  matInput
                  [formControl]="controlSports"
-                 [matAutocomplete]="autoSport">
+                 [matAutocomplete]="autoSport"
+                 spellcheck="false">
           <mat-autocomplete #autoSport="matAutocomplete">
             <mat-option *ngFor="let sport of filteredSports | async" [value]="sport">
               {{sport}}
@@ -28,7 +29,8 @@
                  aria-label="Team Type"
                  matInput
                  [formControl]="controlTeamTypes"
-                 [matAutocomplete]="autoTeam">
+                 [matAutocomplete]="autoTeam"
+                 spellcheck="false">
           <mat-autocomplete #autoTeam="matAutocomplete">
             <mat-option *ngFor="let teamType of filteredTeamTypes | async" [value]="teamType">
               {{teamType}}

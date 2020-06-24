@@ -1,0 +1,25 @@
+<section class="mt-4">
+  <div class="container-fluid d-flex flex-row justify-content-between">
+    <div class="">
+
+      <form class="audience-form">
+        <mat-form-field class="audience-full-width">
+          <mat-label>Audience</mat-label>
+          <input matInput #audience type="number">
+        </mat-form-field>
+      </form>
+
+    </div>
+    <div class="">
+
+      <mat-form-field class="example-form-field">
+        <mat-label>Injury (if any)</mat-label>
+        <input matInput type="text" [(ngModel)]="injury" spellcheck="false">
+        <button mat-button *ngIf="injury" matSuffix mat-icon-button aria-label="Clear" (click)="injury=''">
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+
+    </div>
+  </div>
+</section>
