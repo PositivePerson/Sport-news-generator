@@ -1,0 +1,34 @@
+<section class="mt-4">
+  <div class="container-fluid d-flex flex-row justify-content-between">
+    <div class="">
+
+      <form class="player-form">
+        <mat-form-field class="player-full-width">
+          <mat-label>Player</mat-label>
+          <input matInput #player>
+          <mat-hint align="start"><strong>Name Surname</strong> </mat-hint>
+        </mat-form-field>
+      </form>
+
+    </div>
+    <div class="">
+
+      <form class="location-form">
+        <mat-form-field class="location-full-width">
+          <input type="text"
+                 placeholder="Location"
+                 aria-label="Location"
+                 matInput
+                 [formControl]="controlLocations"
+                 [matAutocomplete]="autoLocation">
+          <mat-autocomplete #autoLocation="matAutocomplete">
+            <mat-option *ngFor="let location of filteredLocations | async" [value]="location">
+              {{location}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+      </form>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,31 @@
+<section class="mt-4">
+  <div class="container-fluid d-flex flex-row justify-content-center">
+    <div class="team1">
+
+      <mat-form-field class="example-form-field">
+        <mat-label>Some Team</mat-label>
+        <input matInput type="text" [(ngModel)]="value1">
+        <button mat-button *ngIf="value1" matSuffix mat-icon-button aria-label="Clear" (click)="value1=''">
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+
+    </div>
+
+    <div class="d-flex align-items-center mx-3 pb-1">
+      VS
+    </div>
+
+    <div class="team2">
+
+      <mat-form-field class="example-form-field">
+        <mat-label>Some Other Team</mat-label>
+        <input matInput type="text" [(ngModel)]="value2">
+        <button mat-button *ngIf="value2" matSuffix mat-icon-button aria-label="Clear" (click)="value2=''">
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+
+    </div>
+  </div>
+</section>

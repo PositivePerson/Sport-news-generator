@@ -1,0 +1,42 @@
+<section class="mt-4">
+  <div class="container-fluid d-flex flex-row justify-content-between">
+    <div class="sport">
+
+      <form class="sport-form">
+        <mat-form-field class="sport-full-width">
+          <input type="text"
+                 placeholder="Type of sport"
+                 aria-label="Sport"
+                 matInput
+                 [formControl]="controlSports"
+                 [matAutocomplete]="autoSport">
+          <mat-autocomplete #autoSport="matAutocomplete">
+            <mat-option *ngFor="let sport of filteredSports | async" [value]="sport">
+              {{sport}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+      </form>
+
+    </div>
+    <div class="teamType">
+
+      <form class="teamType-form">
+        <mat-form-field class="teamType-full-width">
+          <input type="text"
+                 placeholder="Type of team"
+                 aria-label="Team Type"
+                 matInput
+                 [formControl]="controlTeamTypes"
+                 [matAutocomplete]="autoTeam">
+          <mat-autocomplete #autoTeam="matAutocomplete">
+            <mat-option *ngFor="let teamType of filteredTeamTypes | async" [value]="teamType">
+              {{teamType}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+      </form>
+
+    </div>
+  </div>
+</section>
