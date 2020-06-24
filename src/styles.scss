@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "ESP_ital";
+  src: url("./assets/fonts/ESP.ttf") format("truetype");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  :focus {
+    outline: none;
+  }
+  ::-moz-focus-inner {
+    border: 0;
+  }
+}
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin: 0;
+}
