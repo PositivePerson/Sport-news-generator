@@ -16,6 +16,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { SportAndTeamTypeComponent } from './sport-and-team-type/sport-and-team-type.component';
 import { VersusComponent } from './versus/versus.component';
 import { PlayerAndLocationComponent } from './player-and-location/player-and-location.component';
+import { DurationAndWeatherComponent } from './duration-and-weather/duration-and-weather.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PlayerAndLocationComponent } from './player-and-location/player-and-loc
     CaptionComponent,
     SportAndTeamTypeComponent,
     VersusComponent,
-    PlayerAndLocationComponent
+    PlayerAndLocationComponent,
+    DurationAndWeatherComponent
   ],
   imports: [
     BrowserModule,
